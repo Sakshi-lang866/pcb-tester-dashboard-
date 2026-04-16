@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart PCB Tester</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #22c55e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .value {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .pass {
+            color: #22c55e;
+            font-weight: bold;
+        }
+
+        .fail {
+            color: red;
+            font-weight: bold;
+        }
+
+        a {
+            color: #38bdf8;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🔌 Smart PCB Tester</h1>
+
+<div class="card">
+    <button onclick="testPCB()">Run Test</button>
+
+    <div class="value">Voltage: <span id="voltage">--</span></div>
+    <div class="value">Current: <span id="current">--</span></div>
+    <div class="value">Temperature: <span id="temperature">--</span></div>
+
+    <div class="value">
+        Result: <span id="result">--</span>
+    </div>
+
+    <br>
+
+    <a id="download" target="_blank">Download PDF</a>
+
+    <br><br>
+
+    <img id="qr" width="120">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+    
